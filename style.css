@@ -1,0 +1,8 @@
+.box-disp {
+  flex-basis: calc((100% / 4) - 10px);
+}
+
+.card {
+  margin-left: 5px;
+  margin-right: 5px;
+}
