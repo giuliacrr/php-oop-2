@@ -44,6 +44,17 @@ require_once __DIR__ . '/data/prods.php'
                 <?php } ?>
               </span>
               <!--end cat or dog-->
+              <!--Big or small-->
+              <span>
+              <?php if ($prod->getSize() === "Big") { ?>
+                <?php echo "Size: Big" ?>
+                <?php } elseif ($prod->getSize() ==="Medium") { ?>
+                <?php echo "Size: Medium"?>
+                <?php } elseif ($prod->getSize() === "Small") { ?>
+                <?php echo "Size: Small" ?>
+                <?php } ?>
+              </span>
+              <!--End big or small-->
               <h5 class="card-title fw-bold"><?php echo ($prod->getName()) ?></h5>
               <p class="card-text"><?php echo ($prod->getDescription()) ?></p>
               <a href="#" class="btn btn-primary fw-bold">Buy it for <?php echo ($prod->getPrice()) ?>$</a>
