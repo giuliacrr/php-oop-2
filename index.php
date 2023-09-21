@@ -35,7 +35,8 @@ require_once __DIR__ . '/data/prods.php'
             <div class="card-body">
               <!--Cat or Dog icon-->
               <span>
-                <?php if ($prod->getCategory() === "dog") {
+                <?php
+                if ($prod->getCategory() === "dog") {
                   $pet = new Dogs(); ?>
                 <?php echo $pet->getIcon() ?>
                 <?php } elseif ($prod->getCategory() ==="cat") {
