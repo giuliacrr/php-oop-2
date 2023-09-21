@@ -1,6 +1,7 @@
 <?php 
-
+require_once __DIR__ . '/../Traits/Sizes.php';
 class Products {
+  use Sizes;
   protected $name;
   protected $price;
   protected $description;

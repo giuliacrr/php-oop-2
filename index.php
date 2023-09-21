@@ -46,12 +46,12 @@ require_once __DIR__ . '/data/prods.php'
               <!--end cat or dog-->
               <!--Big or small-->
               <span>
-              <?php if ($prod->getSize() === "Big") { ?>
-                <?php echo "Size: Big" ?>
-                <?php } elseif ($prod->getSize() ==="Medium") { ?>
-                <?php echo "Size: Medium"?>
-                <?php } elseif ($prod->getSize() === "Small") { ?>
-                <?php echo "Size: Small" ?>
+                <?php if ($prod->getSize()=== 'Big') { ?>
+                <?php echo "Size: " . $prod->getSize() ?>
+                <?php } elseif ($prod->getSize() === 'Medium') { ?>
+                <?php echo "Size: " . $prod->getSize()?>
+                <?php } elseif ($prod->getSize() === 'Small') { ?>
+                <?php echo "Size: " . $prod->getSize() ?>
                 <?php } ?>
               </span>
               <!--End big or small-->
